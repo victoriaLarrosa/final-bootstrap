@@ -211,6 +211,11 @@ button {
   height: 100%;
 }
 
+div .container {
+  background: rgba(5, 7, 12, 0.70) !important;
+
+}
+
 
 
 
