@@ -1,0 +1,244 @@
+* {
+  font-family: sans-serif;
+  padding: 0%;
+  margin: 0%;
+  background-image: linear-gradient(rgba(5, 7, 12, 0.30), rgba(5, 7, 12, 0.30)),
+    url(./fotos/botellas.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.ancla {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+}
+ .collapse {
+  color: white;
+ }
+
+.cajaContenedoraindex {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 100px;
+  grid-auto-rows: 500px;
+
+
+}
+
+.cajaTragos {
+  padding: 32px 32px;
+  height: 420px;
+  width: 550px;
+  background: rgba(5, 7, 12, 0.90);
+  margin-bottom: 10%; 
+}
+
+
+
+.cajaComida {
+  padding: 32px 32px;
+  height: 420px;
+  width: 550px;
+  background: rgba(5, 7, 12, 0.90);
+  margin-bottom: 10%;
+  
+}
+
+.cajaEventos {
+  padding: 32px 32px;
+  height: 420px;
+  width: 550px;
+  background: rgba(5, 7, 12, 0.90);
+  margin-bottom: 10%;
+}
+
+.cajaHistoria {
+  padding: 32px 32px;
+  height: 420px;
+  width: 550px;
+  background: rgba(5, 7, 12, 0.90);
+  margin-bottom: 10%;
+}
+
+.tragos {
+  height: 350px;
+  width: 500px;
+  border-radius: 2%;
+}
+
+.comida {
+  height: 350px;
+  width: 500px;
+  border-radius: 2%;
+}
+
+.eventos {
+  height: 350px;
+  width: 500px;
+  border-radius: 2%;
+}
+
+.historia {
+  height: 350px;
+  width: 500px;
+  border-radius: 2%;
+
+}
+
+.itemComida {
+    padding: 50px 50px;
+    height: 300px;
+    width: 500px;
+    color: white;
+    background: rgba(5, 7, 12, 0.90);
+    
+}
+
+
+.itemTragos {
+  padding: 50px 50px;
+  height: 300px;
+  width: 500px;
+  color: white;
+  background: rgba(5, 7, 12, 0.90);
+}
+
+.itemEventos {
+  padding: 50px 50px;
+  height: 300px;
+  width: 500px;
+  color: white;
+  background: rgba(5, 7, 12, 0.90);
+}
+
+.itemHistoria {
+  padding: 50px 50px;
+  height: 300px;
+  width: 500px;
+  color: white;
+  background: rgba(5, 7, 12, 0.90);
+}
+
+/*GALERIA*/
+
+.gallery {
+  padding: 80px 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.gallery img {
+  background: rgba(5, 7, 12, 0.95);
+  padding: 20px;
+  width: 100%;
+}
+
+h1 {
+  color: white;
+  font-size: 30px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+h2 {
+  color: white;
+  font-size: 30px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+/*CONTACTO*/
+
+.formulario {
+  max-width: 500px;
+  padding: 20px;
+  margin: auto;
+  background: rgba(5, 7, 12, 0.70);
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+div label {
+  background: rgba(5, 7, 12, 0.70);
+  height: 100%;
+  width: 100%;
+
+}
+
+div input {
+  background: rgba(5, 7, 12, 0.70);
+  height: 100%;
+  width: 100%;
+}
+
+
+button {
+  background: rgba(5, 7, 12, 0.70);
+
+}
+
+.hamburguesa {
+  color: white;
+  background-color: white;
+}
+
+/*MENU*/
+
+.cartaComida {
+  height: 40%;
+  width: 40%;
+  margin: 20px 20px;;
+}
+
+.contenedorCartas {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+@media (max-width:480px) {
+  .gridContainer {
+      grid-template-columns: repeat(1, 1fr)}
+  .enlace img {
+    height: 100px;
+    width: 200px;}
+  nav ul li a {
+    font-size: 16px;}
+  nav ul li {
+    display: flex;
+    flex-direction: column;}
+  .ubicacion {
+    height: 200px;
+    width: 300px;
+  }
+  .cartaComida {
+    height: 100%;
+    width: 100%;}  
+  nav {
+    height: 250px;
+    width: 100%;}
+  }
+
+
+
+
+
+
