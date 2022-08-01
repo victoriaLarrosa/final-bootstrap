@@ -19,12 +19,28 @@
   text-transform: uppercase;
 }
 
+
 /*inicio*/
+
+.flipInicio {
+  width: 100%;
+}
+
+.containerInicio {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  
+}
 
 .card {
   position: relative;
-  width: 600px;
-  height: 500px;
+  width: 500px;
+  height:400px;
+  margin-left: 100px;
+
 }
 
 .card .face {
@@ -39,7 +55,7 @@
 
 .card .front {
   transform: perspective(600px) rotateY(0deg);
-  box-shadow: 0.5px 10px #000;
+  box-shadow: 0 0 10px #fff;
 }
 
 .card .front img {
@@ -111,9 +127,6 @@
 
 /*GALERIA*/
 
-.gallery {
-  padding: 80px 0;
-}
 
 img {
   max-width: 100%;
@@ -137,6 +150,14 @@ h2 {
   font-size: 30px;
   padding-bottom: 20px;
   text-align: center;
+}
+
+/*MENU*/
+
+.menu img {
+  background: rgba(5, 7, 12, 0.95);
+  padding: 20px;
+  width: 80%;
 }
 
 /*CONTACTO*/
@@ -179,8 +200,18 @@ button {
 }
 
 .barra {
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
 
 
 @media (max-width:480px) {
+  .tamLogo {
+    height: 100px;
+    width:200px;
+  }
+  .card {
+    width: 350px;
+    height:250px;
+    margin: 50px 0px;
+}
+}
