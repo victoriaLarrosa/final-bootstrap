@@ -1,0 +1,86 @@
+* {
+    font-family: sans-serif;
+    padding: 0%;
+    margin: 0%;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-image: linear-gradient(rgba(5, 7, 12, 0.3), rgba(5, 7, 12, 0.3)), url(../fotos/botellas.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  
+  @import "variables";
+  @import "header";
+  @import "galeria";
+
+
+  
+  
+  /*MENU*/
+  
+  .menu img {
+    background: rgba(5, 7, 12, 0.95);
+    padding: 20px;
+    width: 80%;
+  }
+  
+  /*CONTACTO*/
+  
+  .formulario {
+    max-width: 500px;
+    padding: 20px;
+    margin: auto;
+    background: rgba(5, 7, 12, 0.9);
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .mapa {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+  }
+  
+  footer {
+    width: 100%;
+    margin-top: 200px;
+    background: rgba(5, 7, 12, 0.9);
+  }
+  
+  .barra {
+    margin-bottom: 100px;
+  }
+  
+  @media (max-width: 480px) {
+    .tamLogo {
+      height: 100px;
+      width: 200px;
+    }
+  
+    .card {
+      width: 350px;
+      height: 250px;
+      margin: 50px 0px;
+    }
+  
+    .mapa {
+      margin-bottom: 100px;
+    }
+  }
+  
+  @media (max-width: 782px) {
+    .tamLogo {
+      height: 100px;
+      width: 200px;
+    }
+  
+    .mapa {
+      margin-bottom: 100px;
+    }
+  }
