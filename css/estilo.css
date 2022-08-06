@@ -24,11 +24,15 @@ body {
 
 .contenedorTexto {
   padding-left: 150px;
-  box-shadow: 0 0 20px #fff;
+  box-shadow: 0 0 30px gray;
   margin: 100px 20px;
-  background: rgba(5, 7, 12, 0.7); }
+  background-image: linear-gradient(rgba(5, 7, 12, 0.6), rgba(5, 7, 12, 0.6)), url(../fotos/fondobarra.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; }
   .contenedorTexto p {
-    color: #fff; }
+    color: #fff;
+    text-transform: none; }
   .contenedorTexto a {
     color: #fff;
     font-size: 25px;
@@ -168,17 +172,15 @@ h2 {
 
 .tab-header {
   padding: 30px 0; }
-
-p {
-  font-size: 14px;
-  text-transform: uppercase;
-  color: white;
-  margin-bottom: 0; }
-
-h3 {
-  font-size: 36px;
-  font-weight: 600;
-  color: white; }
+  .tab-header p {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 0; }
+  .tab-header h3 {
+    font-size: 36px;
+    font-weight: 600;
+    color: white; }
 
 .menu-item {
   -moz-text-align-last: center;
@@ -205,12 +207,6 @@ h4 {
 .contenedorMenu {
   background: rgba(5, 7, 12, 0.7);
   border-radius: 30px; }
-
-/*MENU*/
-.menu img {
-  background: rgba(5, 7, 12, 0.95);
-  padding: 20px;
-  width: 80%; }
 
 /*CONTACTO*/
 .formulario {

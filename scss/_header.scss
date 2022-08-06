@@ -12,12 +12,16 @@
   
   .contenedorTexto {
     padding-left: 150px;
-    box-shadow: 0 0 20px #fff;
+    box-shadow: 0 0 30px gray;
     margin: 100px 20px;
-    background: rgba(5, 7, 12, 0.7);
-  
+    background-image:  linear-gradient(rgba(5, 7, 12, 0.6), rgba(5, 7, 12, 0.6)),url(../fotos/fondobarra.jpg);
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    background-size: cover;
+    
     p {
       color: #fff;
+      text-transform: none;
     }
   
     a {
