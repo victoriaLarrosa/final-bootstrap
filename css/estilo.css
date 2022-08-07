@@ -19,9 +19,10 @@ body {
   text-transform: uppercase; }
 
 .navbar-toggler {
-  background: white;
+  background: gray;
   color: white; }
 
+/*FLIP CARDS*/
 .contenedorTexto {
   padding-left: 150px;
   box-shadow: 0 0 30px gray;
@@ -135,13 +136,13 @@ h1, h2 {
   text-align: center; }
 
 /* MENU */
-h1, p {
+.menu h1, .menu p {
   color: white; }
 
-.nav-tabs {
+.menu .nav-tabs {
   border: 0; }
 
-.nav-link {
+.menu .nav-link {
   margin: 0 10px;
   padding: 10px 5px;
   transition: 0.3s;
@@ -151,61 +152,55 @@ h1, p {
   height: 100%;
   border: 0;
   border-bottom: 2px solid #ffb03b; }
-
-i {
-  padding-right: 15px;
-  font-size: 48px; }
-
-h2 {
-  color: white;
-  font-size: 18px;
-  font-weight: 400;
-  margin: 0;
-  font-family: var(--font-secondary); }
-  h2:hover {
+  .menu .nav-link i {
+    padding-right: 15px;
+    font-size: 48px; }
+  .menu .nav-link h2 {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+    font-family: var(--font-secondary); }
+  .menu .nav-link:hover {
     color: #ffb03b; }
-  h2:active {
+  .menu .nav-link.active {
     color: black;
     border-bottom: #ffb03b;
     background-color: #ffb03b;
     border-radius: 5px; }
 
-.tab-header {
+.menu .tab-content .tab-header {
   padding: 30px 0; }
-  .tab-header p {
+  .menu .tab-content .tab-header p {
     font-size: 14px;
     text-transform: uppercase;
     color: white;
     margin-bottom: 0; }
-  .tab-header h3 {
+  .menu .tab-content .tab-header h3 {
     font-size: 36px;
     font-weight: 600;
     color: white; }
 
-.menu-item {
+.menu .tab-content .menu-item {
   -moz-text-align-last: center;
   text-align-last: center; }
-
-h4 {
-  font-size: 22px;
-  font-weight: 500;
-  color: white;
-  font-family: var(--font-secondary);
-  font-weight: 30px;
-  margin-bottom: 5px; }
-
-.ingredients {
-  font-family: var(--font-secondary);
-  color: #ffb03b;
-  margin-bottom: 5px; }
-
-.price {
-  font-size: 24px;
-  font-weight: 700;
-  color: red; }
+  .menu .tab-content .menu-item h2 {
+    font-size: 22px;
+    font-weight: 500;
+    color: white;
+    font-family: var(--font-secondary);
+    font-weight: 30px;
+    margin-bottom: 5px; }
+  .menu .tab-content .menu-item .ingredients {
+    font-family: var(--font-secondary);
+    color: #ffb03b;
+    margin-bottom: 5px; }
+  .menu .tab-content .menu-item .price {
+    font-size: 24px;
+    font-weight: 700;
+    color: white; }
 
 .contenedorMenu {
-  background: rgba(5, 7, 12, 0.7);
+  background: rgba(3, 3, 3, 0.8);
   border-radius: 30px; }
 
 /*CONTACTO*/

@@ -6,9 +6,12 @@
   }
 
   .navbar-toggler {
-    background: white;
+    background: gray;
     color: white;
   }
+
+
+   /*FLIP CARDS*/
   
   .contenedorTexto {
     padding-left: 150px;
@@ -30,7 +33,7 @@
       text-transform: initial;
     }
   }
-  
+
   .card {
     background: rgba(5, 7, 12, 0.9);
     position: relative;
