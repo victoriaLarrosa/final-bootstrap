@@ -1,0 +1,9 @@
+.olaMundo {
+    color: red;
+    font-size: 30px;
+}
+
+.holaMundo {
+    @extend .olaMundo;
+    text-decoration: uppercase;
+}

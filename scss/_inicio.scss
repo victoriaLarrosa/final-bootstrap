@@ -1,17 +1,5 @@
-.ancla {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: white;
-    text-transform: uppercase;
-  }
 
-  .navbar-toggler {
-    background: gray;
-    color: white;
-  }
-
-
-   /*FLIP CARDS*/
+   /*BIENVENIDA A LA PAGINA*/
   
   .contenedorTexto {
     padding-left: 150px;
@@ -21,12 +9,12 @@
     background-repeat: no-repeat; 
     background-attachment: fixed;
     background-size: cover;
-    
-    p {
-      color: #fff;
-      text-transform: none;
-    }
   
+    p {
+      @extend .holaMundo
+
+    }
+
     a {
       color: #fff;
       font-size: 25px;
@@ -34,8 +22,11 @@
     }
   }
 
+
+  /*FLIP CARDS*/
+
   .card {
-    background: rgba(5, 7, 12, 0.9);
+    background: $color-primario;
     position: relative;
     width: 500px;
     height: 400px;

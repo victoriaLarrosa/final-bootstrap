@@ -15,107 +15,35 @@
   }
   
   @import "variables";
-  @import "header";
+  @import "inicio";
   @import "galeria";
+  @import "menu";
+  @import "variables";
+  @import "condicionales";
+  @import "maps";
+  @import "mixin";
+  @import "extend";
 
 
-  /* MENU */
 
 
-  .menu {
-    h1, p {
-      color: white;
-    }
 
-    .nav-tabs {
-      border: 0;
-    }
 
-    .nav-link {
-      margin: 0 10px;
-      padding: 10px 5px;
-      transition: 0.3s;
-      color: white;
-      border-radius: 0;
-      cursor: pointer;
-      height: 100%;
-      border: 0;
-      border-bottom: 2px solid #ffb03b;
 
-      i {
-        padding-right: 15px;
-        font-size: 48px;
-      }
 
-      h2 {
-        font-size: 18px;
-        font-weight: 400;
-        margin: 0;
-        font-family: var(--font-secondary);
-      }
+/*BARRA DE NAVEGACION*/
 
-      &:hover {
-        color: #ffb03b;
-      }
-
-      &.active {
-        color: black;
-        border-bottom: #ffb03b;
-        background-color: #ffb03b;
-        border-radius: 5px;
-      }
-    }
-
-    .tab-content {
-      .tab-header {
-        padding: 30px 0;
-
-        p {
-          font-size: 14px;
-          text-transform: uppercase;
-          color: white;
-          margin-bottom: 0;
-        }
-
-        h3 {
-          font-size: 36px;
-          font-weight: 600;
-          color: white;
-        }
-      }
-
-      .menu-item {
-        -moz-text-align-last: center;
-        text-align-last: center;
-
-        h2 {
-          font-size: 22px;
-          font-weight: 500;
-          color: white;
-          font-family: var(--font-secondary);
-          font-weight: 30px;
-          margin-bottom: 5px;
-        }
-
-        .ingredients {
-          font-family: var(--font-secondary);
-          color: #ffb03b;
-          margin-bottom: 5px;
-        }
-
-        .price {
-          font-size: 24px;
-          font-weight: 700;
-          color: white;
-        }
-      }
-    }
+  .ancla {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: map-get($map: $estilo, $key: color);
+    text-transform: uppercase;
   }
 
-  .contenedorMenu {
-      background: rgba(3, 3, 3, 0.8);
-      border-radius: 30px;
-    }
+  .navbar-toggler {
+    background: gray;
+    color: map-get($map: $estilo, $key: color);
+  }
 
   
   /*CONTACTO*/
@@ -124,7 +52,7 @@
     max-width: 500px;
     padding: 20px;
     margin: auto;
-    background: rgba(5, 7, 12, 0.9);
+    background: $color-primario;
     border-radius: 5px;
     font-weight: bold;
   }
@@ -139,16 +67,19 @@
   footer {
     width: 100%;
     margin-top: 200px;
-    background: rgba(5, 7, 12, 0.9);
+    background: $color-primario;
 
     i {
-      font-size: 22px;
+      @include parrafos;
+      font-size: map-get($map: $estilo, $key: tamFuente);
     }
   }
   
   .barra {
     margin-bottom: 100px;
   }
+
+  /*RESPONSIVE*/
   
   @media (max-width: 480px) {
     .tamLogo {
@@ -169,8 +100,8 @@
   
   @media (max-width: 782px) {
     .tamLogo {
-      height: 100px;
-      width: 200px;
+      height: 150px;
+      width: 300px;
     }
   
     .mapa {

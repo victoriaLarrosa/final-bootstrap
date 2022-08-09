@@ -12,17 +12,7 @@ body {
   background-attachment: fixed;
   background-size: cover; }
 
-.ancla {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: white;
-  text-transform: uppercase; }
-
-.navbar-toggler {
-  background: gray;
-  color: white; }
-
-/*FLIP CARDS*/
+/*BIENVENIDA A LA PAGINA*/
 .contenedorTexto {
   padding-left: 150px;
   box-shadow: 0 0 30px gray;
@@ -31,14 +21,12 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover; }
-  .contenedorTexto p {
-    color: #fff;
-    text-transform: none; }
   .contenedorTexto a {
     color: #fff;
     font-size: 25px;
     text-transform: initial; }
 
+/*FLIP CARDS*/
 .card {
   background: rgba(5, 7, 12, 0.9);
   position: relative;
@@ -125,7 +113,7 @@ img {
   max-width: 100%; }
 
 .gallery img {
-  background: rgba(5, 7, 12, 0.95);
+  background: rgba(5, 7, 12, 0.9);
   padding: 20px;
   width: 100%; }
 
@@ -203,6 +191,25 @@ h1, h2 {
   background: rgba(3, 3, 3, 0.8);
   border-radius: 30px; }
 
+/*MAP . GET*/
+.olaMundo, .holaMundo, .contenedorTexto p {
+  color: red;
+  font-size: 30px; }
+
+.holaMundo, .contenedorTexto p {
+  text-decoration: uppercase; }
+
+/*BARRA DE NAVEGACION*/
+.ancla {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase; }
+
+.navbar-toggler {
+  background: gray;
+  color: white; }
+
 /*CONTACTO*/
 .formulario {
   max-width: 500px;
@@ -223,11 +230,14 @@ footer {
   margin-top: 200px;
   background: rgba(5, 7, 12, 0.9); }
   footer i {
+    color: red;
+    background-color: white;
     font-size: 22px; }
 
 .barra {
   margin-bottom: 100px; }
 
+/*RESPONSIVE*/
 @media (max-width: 480px) {
   .tamLogo {
     height: 100px;
@@ -241,7 +251,7 @@ footer {
 
 @media (max-width: 782px) {
   .tamLogo {
-    height: 100px;
-    width: 200px; }
+    height: 150px;
+    width: 300px; }
   .mapa {
     margin-bottom: 100px; } }
