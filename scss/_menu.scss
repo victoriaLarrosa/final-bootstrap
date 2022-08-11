@@ -2,8 +2,18 @@
 
 
 .menu {
-    h1, p {
+    h1 {
+      color: #BF2431;
+      font-size: 40px;
+      font-weight: bolder;
+      text-shadow: 0 0 4px white;
+
+    }
+
+    p {
       color: white;
+      font-size: 22px;
+      margin-bottom: 30px;
     }
 
     .nav-tabs {
@@ -15,11 +25,12 @@
       padding: 10px 5px;
       transition: 0.3s;
       color: white;
-      border-radius: 0;
       cursor: pointer;
       height: 100%;
       border: 0;
-      border-bottom: 2px solid #ffb03b;
+      border-radius: 20px;
+      border: 4px solid #BF2431;
+      box-shadow: 0 0 5px white;
 
       i {
         padding-right: 15px;
@@ -27,20 +38,19 @@
       }
 
       h2 {
-        font-size: 18px;
+        font-size: 22px;
         font-weight: 400;
         margin: 0;
         font-family: var(--font-secondary);
       }
 
       &:hover {
-        color: #ffb03b;
+        color: #BF2431;
       }
 
       &.active {
         color: black;
-        border-bottom: #ffb03b;
-        background-color: #ffb03b;
+        background-color: #BF2431;
         border-radius: 5px;
       }
     }
@@ -57,7 +67,7 @@
         }
 
         h3 {
-          font-size: 36px;
+          font-size: 40px;
           font-weight: 600;
           color: white;
         }
@@ -78,7 +88,7 @@
 
         .ingredients {
           font-family: var(--font-secondary);
-          color: #ffb03b;
+          color: #BF2431;
           margin-bottom: 5px;
         }
 
@@ -86,6 +96,14 @@
           font-size: 24px;
           font-weight: 700;
           color: white;
+          border: 4px solid #BF2431;
+          box-shadow: inset 0 0 5px white, 0 0 5px white;
+          border-radius: 60px;
+          width: 100px;
+          margin: auto;
+          
+
+          
         }
       }
     }

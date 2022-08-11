@@ -1,12 +1,9 @@
-* {
+body {
   font-family: sans-serif;
   padding: 0%;
   margin: 0%;
-  text-decoration: none;
-  list-style: none;
-  box-sizing: border-box; }
-
-body {
+  width: 100%;
+  height: 100vh;
   background-image: linear-gradient(rgba(5, 7, 12, 0.3), rgba(5, 7, 12, 0.3)), url(../fotos/botellas.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -124,8 +121,16 @@ h1, h2 {
   text-align: center; }
 
 /* MENU */
-.menu h1, .menu p {
-  color: white; }
+.menu h1 {
+  color: #BF2431;
+  font-size: 40px;
+  font-weight: bolder;
+  text-shadow: 0 0 4px white; }
+
+.menu p {
+  color: white;
+  font-size: 22px;
+  margin-bottom: 30px; }
 
 .menu .nav-tabs {
   border: 0; }
@@ -135,25 +140,25 @@ h1, h2 {
   padding: 10px 5px;
   transition: 0.3s;
   color: white;
-  border-radius: 0;
   cursor: pointer;
   height: 100%;
   border: 0;
-  border-bottom: 2px solid #ffb03b; }
+  border-radius: 20px;
+  border: 4px solid #BF2431;
+  box-shadow: 0 0 5px white; }
   .menu .nav-link i {
     padding-right: 15px;
     font-size: 48px; }
   .menu .nav-link h2 {
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 400;
     margin: 0;
     font-family: var(--font-secondary); }
   .menu .nav-link:hover {
-    color: #ffb03b; }
+    color: #BF2431; }
   .menu .nav-link.active {
     color: black;
-    border-bottom: #ffb03b;
-    background-color: #ffb03b;
+    background-color: #BF2431;
     border-radius: 5px; }
 
 .menu .tab-content .tab-header {
@@ -164,7 +169,7 @@ h1, h2 {
     color: white;
     margin-bottom: 0; }
   .menu .tab-content .tab-header h3 {
-    font-size: 36px;
+    font-size: 40px;
     font-weight: 600;
     color: white; }
 
@@ -180,12 +185,17 @@ h1, h2 {
     margin-bottom: 5px; }
   .menu .tab-content .menu-item .ingredients {
     font-family: var(--font-secondary);
-    color: #ffb03b;
+    color: #BF2431;
     margin-bottom: 5px; }
   .menu .tab-content .menu-item .price {
     font-size: 24px;
     font-weight: 700;
-    color: white; }
+    color: white;
+    border: 4px solid #BF2431;
+    box-shadow: inset 0 0 5px white, 0 0 5px white;
+    border-radius: 60px;
+    width: 100px;
+    margin: auto; }
 
 .contenedorMenu {
   background: rgba(3, 3, 3, 0.8);
@@ -198,6 +208,40 @@ h1, h2 {
 
 .holaMundo, .contenedorTexto p {
   text-decoration: uppercase; }
+
+.contenedorFlyers {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background-color: rgba(5, 7, 12, 0.9);
+  width: 100%;
+  height: 100vh; }
+
+.slide-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden; }
+
+.image-slider {
+  width: 100%;
+  height: 600px;
+  position: absolute;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .7s; }
+
+.slides-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 30px 0 30px; }
+
+.img {
+  position: relative; }
 
 /*BARRA DE NAVEGACION*/
 .ancla {
