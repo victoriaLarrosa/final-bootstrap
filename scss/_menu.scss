@@ -3,7 +3,7 @@
 
 .menu {
     h1 {
-      color: #BF2431;
+      color: #5B061D;
       font-size: 40px;
       font-weight: bolder;
       text-shadow: 0 0 4px white;
@@ -28,9 +28,8 @@
       cursor: pointer;
       height: 100%;
       border: 0;
-      border-radius: 20px;
-      border: 4px solid #BF2431;
-      box-shadow: 0 0 5px white;
+      border-bottom: 4px solid #5B061D; 
+     
 
       i {
         padding-right: 15px;
@@ -45,13 +44,13 @@
       }
 
       &:hover {
-        color: #BF2431;
+        color: #5B061D;
       }
 
       &.active {
-        color: black;
-        background-color: #BF2431;
-        border-radius: 5px;
+        color: white;
+        background-color: $color-primario;
+        box-shadow: 0 0 10px white;
       }
     }
 
@@ -88,7 +87,7 @@
 
         .ingredients {
           font-family: var(--font-secondary);
-          color: #BF2431;
+          color: gray;
           margin-bottom: 5px;
         }
 
@@ -96,11 +95,10 @@
           font-size: 24px;
           font-weight: 700;
           color: white;
-          border: 4px solid #BF2431;
-          box-shadow: inset 0 0 5px white, 0 0 5px white;
-          border-radius: 60px;
+          border-bottom: 4px solid #5B061D;
           width: 100px;
           margin: auto;
+          margin-bottom: 20px;
           
 
           

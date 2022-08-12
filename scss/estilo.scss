@@ -26,10 +26,18 @@
 /*BARRA DE NAVEGACION*/
 
   .ancla {
-    font-size: 1.5rem;
+    font-size: 1.5em;
     font-weight: bold;
     color: map-get($map: $estilo, $key: color);
     text-transform: uppercase;
+    border-bottom: 5px solid grey;
+    box-shadow:0 0 5px white;
+    border-radius: 10px;
+
+
+    &:hover {
+      color: grey;
+    }
   }
 
   .navbar-toggler {
@@ -88,6 +96,7 @@
     .mapa {
       margin-bottom: 100px;
     }
+    
   }
   
   @media (max-width: 782px) {
