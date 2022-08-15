@@ -1,33 +1,107 @@
-.eventosInfo {
-    padding: 20px 20px;
-    background-color: $color-primario;
-    box-shadow: inset 0 0 5px white, 0 0 5px white;
-    border-radius: 60px;
-    border: 1px solid gray;
-    margin-bottom: 100px;
+.contenedorEventos {
+  background-color: $color-primario;
+  padding: 50px 50px;
 
+}
+
+.eventos {
     h1 {
-      color: white;
-      font-size: 30px;
-      font-weight: bold;
-    }
-
-    p {
+        color: #ecaf0f;
+        font-size: 40px;
+        font-weight: bolder;
+        text-shadow: 0 0 4px white;
+  
+      }
+  
+      p {
         color: white;
         font-size: 22px;
-       }
-}
+        margin-bottom: 30px;
+      }
+  
+      .nav-tabs {
+        border: 0;
+      }
+  
+      .nav-link {
+        margin: 0px 50px;
+        padding: 10px 5px;
+        transition: 0.3s;
+        color: white;
+        cursor: pointer;
+        height: 100%;
+        border: 0;
+        border-bottom: 4px solid #ecaf0f; 
+       
+  
+        i {
+          padding-right: 15px;
+          font-size: 48px;
+        }
+  
+        h2 {
+          font-size: 22px;
+          font-weight: 400;
+          margin: 0;
+          font-family: var(--font-secondary);
+        }
+  
+        &:hover {
+          color: #ecaf0f;
+        }
+  
+        &.active {
+          color: white;
+          background-color: $color-primario;
+          box-shadow: 0 0 10px white;
+        }
+      }
+    }
 
-.flyer {
-    background: $color-primario;
-    padding: 20px;
-    box-shadow:0 0 10px white;
-    height: 400px;
-    width: 400px;
-    margin: auto;
-    margin-bottom: 50px;
-    
-}
+    .tab-content {
+    .tab-header {
+
+            h3 {
+                font-size: 22px;
+                font-weight: 500;
+                color: white;
+                font-family: var(--font-secondary);
+                font-weight: 30px;
+                margin: 50px 0;
+        }
+
+    }
+
+    }
+
+      .imgFlyer {
+        max-width: 100%;
+        margin:auto;
+      }
+
+    .contenedorReservas {
+      box-shadow: 0 0 5px white;
+
+      h3 {
+      color: white;
+      font-weight: bold;
+      font-size: 30px;
+      margin-bottom: 20px;
+      border-bottom: 5px solid #ecaf0f;
+      width: 280px;
+      margin: auto;
+      }
+    }
+
+    .formularioReservas {
+      padding: 20px 20px;
+      font-weight: bold;
+
+    }
+
+
+
+
 
 
 

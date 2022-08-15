@@ -47,23 +47,188 @@
             </div>
         </nav>
     </header>
-    <div class="eventosInfo">
-        <h1>No te quedes sin tu Anticipada!</h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo odio quibusdam perspiciatis repudiandae sapiente, consectetur dolores pariatur, animi ea repellendus nemo voluptates, veniam temporibus odit.</p>
-    </div>
-    <div class="container-lg boxFlyers">
-        <div class="row gy-5 gx-5 row-cols-1 row-cols-sm-2 row-cols-md-3">
-        <div class="col flyer">
-          <img src="../flyers/jueves.jpg" class="card-img-top" alt="flyer">
+    <section id="eventos " class="eventos">
+        <div class="container contenedorEventos mt-3" data-aos="fade-up">
+  
+          <div class="section-header text-center">
+            <h1>No te quedes sin tu anticipada!</h1>
+            <p>Contactanos para reservar mesa, comprar anticipadas o aprovechar nuestra promo de 2x1 que se va volando.</p>
+            <p>Nosotros ya estamos listos para la fiesta ¿Y Vos?</p>
+
+          </div>
+  
+          <ul class="nav nav-tabs d-flex justify-content-center" data-aos="fade-up" data-aos-delay="200">
+  
+            <li class="nav-item">
+              <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#jueves">
+                <h2>JUEVES!</h2>
+              </a>
+            </li><!-- End tab nav item -->
+  
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#viernes">
+                <h2>VIERNES!</h2>
+              </a><!-- End tab nav item -->
+  
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#sabado">
+                <h2>SABADO!</h2>
+              </a>
+            </li><!-- End tab nav item -->
+
+          </ul>
+  
+          <div class="tab-content" data-aos="fade-up" data-aos-delay="300">
+  
+            <!-- JUEVES ----------------------------------------------------------------------------------------------------------------------------------------------->
+            <div class="tab-pane fade active show" id="jueves">
+  
+              <div class="tab-header text-center">
+                <h3>Ingreso FREE hasta las 23hs!</h3>
+              </div>
+  
+              <div class="row gy-5">
+  
+                <div class="col-lg-6 boxFlyer">
+                   <img src="../flyers/jueves.jpg" class="imgFlyer" alt="flyer"></img>
+                </div>
+
+                <div class="col contenedorReservas">
+                  <h3>Reservas de Mesa</h3>
+              <form class="formularioReservas">
+                  <div class="mb-3">
+                    <label for="exampleInputNombre1" class="form-label text-white">Nombre y Apellido</label>
+                    <input type="text" class="form-control text-dark reservaEventos" id="exampleInputNombre1" aria-describedby="emailHelp" placeholder="Ingrese Nombre y Apellido">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputNumero1" class="form-label text-white">Cantidad de Invitados</label>
+                    <input type="number" class="form-control text-dark  reservaEventos" id="exampleInputNumero1">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputCorreo1" class="form-label text-white">Fecha de Reserva</label>
+                      <input type="date" class="form-control text-dark reservaEventos" id="exampleInputFecha1">
+                    </div>
+                  <div class="mb-3">
+                      <label for="exampleInputPregunta" class="form-label text-white">Solicitud en especial?</label>
+                      <textarea type="text" class="form-control text-dark  reservaEventos" id="exampleInputPregunta1"
+                        placeholder="Ingrese su pregunta" rows="2"></textarea>
+                  </div>
+                  <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label text-white" for="exampleCheck1">Acepto los terminos y condiciones</label>
+                  </div>
+                  <button type="submit" class="btn btn-dark">Enviar</button>
+                  <button type="reset" class="btn btn-dark">Restablecer</button>
+          
+              </form>
+              </div>
+           
+            </div>
+
+            </div>
+
+            <!--FIN JUEVES ----------------------------------------------------------------------------------------------------------------------------------------------->
+  
+            <!-- VIERNES ----------------------------------------------------------------------------------------------------------------------------->
+            <div class="tab-pane fade" id="viernes">
+  
+              <div class="tab-header text-center text-center">
+                <h3>2x1 Anticipadas!</h3>
+              </div>
+  
+              <div class="row gy-5">
+  
+                
+                <div class="col-lg-6 boxFlyer">
+                    <img src="../flyers/viernes.jpg" class="imgFlyer" alt="flyer"></img>
+                </div>
+
+                <div class="col contenedorReservas">
+                  <h3>Reservas de Mesa</h3>
+              <form class="formularioReservas">
+                  <div class="mb-3">
+                    <label for="exampleInputNombre1" class="form-label text-white">Nombre y Apellido</label>
+                    <input type="text" class="form-control text-dark reservaEventos" id="exampleInputNombre1" aria-describedby="emailHelp" placeholder="Ingrese Nombre y Apellido">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputNumero1" class="form-label text-white">Cantidad de Invitados</label>
+                    <input type="number" class="form-control text-dark  reservaEventos" id="exampleInputNumero1">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputCorreo1" class="form-label text-white">Fecha de Reserva</label>
+                      <input type="date" class="form-control text-dark reservaEventos" id="exampleInputFecha1">
+                    </div>
+                  <div class="mb-3">
+                      <label for="exampleInputPregunta" class="form-label text-white">Solicitud en especial?</label>
+                      <textarea type="text" class="form-control text-dark  reservaEventos" id="exampleInputPregunta1"
+                        placeholder="Ingrese su pregunta" rows="2"></textarea>
+                  </div>
+                  <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label text-white" for="exampleCheck1">Acepto los terminos y condiciones</label>
+                  </div>
+                  <button type="submit" class="btn btn-dark">Enviar</button>
+                  <button type="reset" class="btn btn-dark">Restablecer</button>
+          
+              </form>
+              </div>
+ 
+              </div>
+              
+            </div>
+            <!-- FIN VIERNES-->
+  
+            <!-- SABADO -->
+            <div class="tab-pane fade" id="sabado">
+  
+              <div class="tab-header text-center">
+                <h3>Muisca hasta que salga el sol!</h3>
+              </div>
+  
+              <div class="row gy-5">
+
+                <div class="col-lg-6 boxFlyer">
+                    <img src="../flyers/sabado.jpg" class="imgFlyer" alt="flyer"></img>
+                </div>
+
+                <div class="col contenedorReservas">
+                    <h3>Reservas de Mesa</h3>
+                <form class="formularioReservas">
+                    <div class="mb-3">
+                      <label for="exampleInputNombre1" class="form-label text-white">Nombre y Apellido</label>
+                      <input type="text" class="form-control text-dark reservaEventos" id="exampleInputNombre1" aria-describedby="emailHelp" placeholder="Ingrese Nombre y Apellido">
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputNumero1" class="form-label text-white">Cantidad de Invitados</label>
+                      <input type="number" class="form-control text-dark  reservaEventos" id="exampleInputNumero1">
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputCorreo1" class="form-label text-white">Fecha de Reserva</label>
+                        <input type="date" class="form-control text-dark reservaEventos" id="exampleInputFecha1">
+                      </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPregunta" class="form-label text-white">Solicitud en especial?</label>
+                        <textarea type="text" class="form-control text-dark  reservaEventos" id="exampleInputPregunta1"
+                          placeholder="Ingrese su pregunta" rows="2"></textarea>
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label text-white" for="exampleCheck1">Acepto los terminos y condiciones</label>
+                    </div>
+                    <button type="submit" class="btn btn-dark">Enviar</button>
+                    <button type="reset" class="btn btn-dark">Restablecer</button>
+            
+                </form>
+                </div>
+
+              </div>
+
+            </div>
+            <!-- FIN SABADO --> 
+
+          </div>
         </div>
-        <div class="col flyer">
-          <img src="../flyers/viernes.jpg" class="card-img-top" alt="flyer">
-        </div>
-        <div class="col flyer">
-          <img src="../flyers/sabado.jpg" class="card-img-top" alt="flyer">
-        </div>
-    </div>
-      </div>
+      </section>
     
     <footer class="text-white pt-2 pb-2">
 

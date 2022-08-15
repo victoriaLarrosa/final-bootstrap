@@ -17,10 +17,7 @@
   @import "galeria";
   @import "menu";
   @import "variables";
-  @import "condicionales";
-  @import "maps";
   @import "mixin";
-  @import "extend";
   @import "eventos";
 
 /*BARRA DE NAVEGACION*/
@@ -28,11 +25,11 @@
   .ancla {
     font-size: 1.5em;
     font-weight: bold;
-    color: map-get($map: $estilo, $key: color);
+    color: white;
     text-transform: uppercase;
-    border-bottom: 5px solid grey;
     box-shadow:0 0 5px white;
     border-radius: 10px;
+    margin-right: 20px;
 
 
     &:hover {
@@ -42,7 +39,7 @@
 
   .navbar-toggler {
     background: gray;
-    color: map-get($map: $estilo, $key: color);
+    color: white;
   }
 
   
@@ -51,17 +48,49 @@
   .formulario {
     max-width: 500px;
     padding: 20px;
-    margin: auto;
     background: $color-primario;
     border-radius: 5px;
     font-weight: bold;
+    box-shadow:0 0 5px white;
+    margin: auto;
+
+
+
+    h2 {
+      color: white;
+      margin-bottom: 60px;
+      font-weight: bold;
+    }
   }
   
   .mapa {
+    background-color: $color-primario;
     display: flex;
     justify-content: center;
-    align-content: center;
-    margin: auto;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 30px;
+    box-shadow:0 0 5px white;
+
+
+
+  }
+
+  .textoUbi {
+    display: flex;
+    flex-direction: column;
+
+
+    h1 {
+      color: white;
+      font-weight: bold;
+      
+    }
+
+    p {
+      color: white;
+      margin-top: 50px;
+    }
   }
   
   footer {
@@ -70,8 +99,7 @@
     background: $color-primario;
 
     i {
-      @include parrafos;
-      font-size: map-get($map: $estilo, $key: tamFuente);
+      color: white;
     }
   }
   
