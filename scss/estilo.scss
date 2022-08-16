@@ -1,5 +1,12 @@
-
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Special+Elite&display=swap');
+  @import "variables";
+  @import "inicio";
+  @import "galeria";
+  @import "menu";
+  @import "eventos";
+  @import "contacto";
   
+
   body {
     font-family: sans-serif;
     padding: 0%;
@@ -11,25 +18,22 @@
     background-attachment: fixed;
     background-size: cover;
   }
-  
-  @import "variables";
-  @import "inicio";
-  @import "galeria";
-  @import "menu";
-  @import "variables";
-  @import "mixin";
-  @import "eventos";
 
 /*BARRA DE NAVEGACION*/
+
+.tamLogo {
+  max-width: 100%;
+}
 
   .ancla {
     font-size: 1.5em;
     font-weight: bold;
     color: white;
     text-transform: uppercase;
-    box-shadow:0 0 5px white;
+    box-shadow:0 0 10px white;
     border-radius: 10px;
     margin-right: 20px;
+    
 
 
     &:hover {
@@ -42,57 +46,13 @@
     color: white;
   }
 
-  
-  /*CONTACTO*/
-  
-  .formulario {
-    max-width: 500px;
-    padding: 20px;
-    background: $color-primario;
-    border-radius: 5px;
-    font-weight: bold;
-    box-shadow:0 0 5px white;
-    margin: auto;
-
-
-
-    h2 {
-      color: white;
-      margin-bottom: 60px;
-      font-weight: bold;
-    }
-  }
-  
-  .mapa {
-    background-color: $color-primario;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding-bottom: 30px;
-    box-shadow:0 0 5px white;
-
-
-
+  .barra {
+    margin-bottom: 100px;
   }
 
-  .textoUbi {
-    display: flex;
-    flex-direction: column;
+  /*FOOTER*/
 
 
-    h1 {
-      color: white;
-      font-weight: bold;
-      
-    }
-
-    p {
-      color: white;
-      margin-top: 50px;
-    }
-  }
-  
   footer {
     width: 100%;
     margin-top: 200px;
@@ -101,10 +61,12 @@
     i {
       color: white;
     }
-  }
-  
-  .barra {
-    margin-bottom: 100px;
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+
   }
 
   /*RESPONSIVE*/
@@ -115,12 +77,6 @@
       width: 200px;
     }
   
-    .card {
-      width: 350px;
-      height: 250px;
-      margin: 50px 0px;
-    }
-  
     .mapa {
       margin-bottom: 100px;
     }
@@ -129,8 +85,8 @@
   
   @media (max-width: 782px) {
     .tamLogo {
-      height: 150px;
-      width: 300px;
+      height: 100px;
+      width: 200px;
     }
   
     .mapa {

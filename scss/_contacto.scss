@@ -1,0 +1,43 @@
+/*MAPA*/
+
+.mapa {
+    background-color: $color-primario;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 30px;
+    box-shadow:0 0 5px white;
+
+    h1 {
+      color: white;
+      font-weight: bold;
+      text-shadow: none;
+      
+    }
+
+    p {
+      color: white;
+      margin-top: 50px;
+    }
+  }
+
+/*FORMULARIO*/
+
+.formulario {
+    max-width: 500px;
+    padding: 20px;
+    background: $color-primario;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow:0 0 5px white;
+    margin: auto;
+
+
+
+    h2 {
+      color: white;
+      margin-bottom: 60px;
+      font-family: 'Special Elite', cursive;
+    }
+  }

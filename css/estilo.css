@@ -1,14 +1,4 @@
-body {
-  font-family: sans-serif;
-  padding: 0%;
-  margin: 0%;
-  width: 100%;
-  height: 100vh;
-  background-image: linear-gradient(rgba(5, 7, 12, 0.3), rgba(5, 7, 12, 0.3)), url(../fotos/botellas.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover; }
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Special+Elite&display=swap");
 /*BIENVENIDA A LA PAGINA*/
 .contenedorTexto {
   padding-left: 150px;
@@ -19,7 +9,8 @@ body {
   background-attachment: fixed;
   background-size: cover; }
   .contenedorTexto h1 {
-    color: white; }
+    color: white;
+    font-family: 'Special Elite', cursive; }
   .contenedorTexto p {
     color: white; }
   .contenedorTexto a {
@@ -28,12 +19,18 @@ body {
     text-transform: initial; }
 
 /*FLIP CARDS*/
+.boxFlip {
+  background-color: rgba(5, 7, 12, 0.7); }
+
+.boxFlip1 {
+  background-color: rgba(5, 7, 12, 0.7);
+  padding-top: 100px; }
+
 .card {
-  background: rgba(5, 7, 12, 0.7);
+  background-color: rgba(5, 7, 12, 0.7);
   position: relative;
   width: 500px;
-  height: 400px;
-  margin-left: 100px;
+  height: 300px;
   margin-bottom: 100px; }
   .card .face {
     position: absolute;
@@ -45,17 +42,15 @@ body {
     transition: 0.5s; }
   .card .front {
     transform: perspective(600px) rotateY(0deg);
-    box-shadow: 0 0 10px #fff; }
+    box-shadow: 0 0 20px #fff; }
     .card .front img {
       position: absolute;
       max-width: 100%;
-      max-height: 100%;
       object-fit: cover; }
   .card .back {
     transform: perspective(600px) rotateY(180deg);
     padding: 15px;
     color: white;
-    display: flex;
     flex-direction: column;
     justify-content: space-between;
     text-align: center; }
@@ -67,7 +62,7 @@ body {
         color: white; }
     .card .back h3 {
       font-size: 30px;
-      margin-top: 10px;
+      margin-top: 20px;
       letter-spacing: 2px; }
     .card .back p {
       letter-spacing: 1px; }
@@ -99,19 +94,20 @@ body {
   width: 80%;
   margin: auto; }
   .boxText h1 {
+    font-weight: bold;
+    font-family: 'Special Elite', cursive;
     color: white;
-    font-size: 40px;
-    font-weight: bold; }
+    font-size: 40px; }
   .boxText p {
     color: white;
     font-size: 22px; }
 
 /* MENU */
 .menu h1 {
-  color: #5B061D;
+  color: white;
   font-size: 45px;
-  font-weight: bolder;
-  text-shadow: 0 0 5px white; }
+  font-family: 'Special Elite', cursive;
+  text-shadow: 5px 5px 5px #e00000, 5px 5px 5px #e00000; }
 
 .menu p {
   color: white;
@@ -129,7 +125,7 @@ body {
   cursor: pointer;
   height: 100%;
   border: 0;
-  border-bottom: 4px solid #5B061D; }
+  border-bottom: 4px solid #e00000; }
   .menu .nav-link i {
     padding-right: 15px;
     font-size: 48px; }
@@ -139,7 +135,7 @@ body {
     margin: 0;
     font-family: var(--font-secondary); }
   .menu .nav-link:hover {
-    color: #5B061D; }
+    color: #e00000; }
   .menu .nav-link.active {
     color: white;
     background-color: rgba(5, 7, 12, 0.7);
@@ -169,19 +165,19 @@ body {
     margin-bottom: 5px; }
   .menu .tab-content .menu-item .ingredients {
     font-family: var(--font-secondary);
-    color: gray;
+    color: whitesmoke;
     margin-bottom: 5px; }
   .menu .tab-content .menu-item .price {
     font-size: 24px;
     font-weight: 700;
     color: white;
-    border-bottom: 4px solid #5B061D;
+    border-bottom: 4px solid #e00000;
     width: 100px;
     margin: auto;
     margin-bottom: 20px; }
 
 .contenedorMenu {
-  background: rgba(3, 3, 3, 0.8);
+  background: rgba(5, 7, 12, 0.7);
   border-radius: 30px; }
 
 .contenedorEventos {
@@ -192,17 +188,18 @@ body {
   color: #ecaf0f;
   font-size: 40px;
   font-weight: bolder;
-  text-shadow: 0 0 4px white; }
+  text-shadow: 2px 2px 2px white;
+  font-family: 'Special Elite', cursive; }
 
 .eventos p {
   color: white;
   font-size: 22px;
   margin-bottom: 30px; }
 
-.eventos .nav-tabs {
+.nav-tabs {
   border: 0; }
 
-.eventos .nav-link {
+.navEventos {
   margin: 0px 50px;
   padding: 10px 5px;
   transition: 0.3s;
@@ -211,17 +208,17 @@ body {
   height: 100%;
   border: 0;
   border-bottom: 4px solid #ecaf0f; }
-  .eventos .nav-link i {
+  .navEventos i {
     padding-right: 15px;
     font-size: 48px; }
-  .eventos .nav-link h2 {
+  .navEventos h2 {
     font-size: 22px;
     font-weight: 400;
     margin: 0;
     font-family: var(--font-secondary); }
-  .eventos .nav-link:hover {
+  .navEventos:hover {
     color: #ecaf0f; }
-  .eventos .nav-link.active {
+  .navEventos.active {
     color: white;
     background-color: rgba(5, 7, 12, 0.7);
     box-shadow: 0 0 10px white; }
@@ -244,32 +241,36 @@ body {
     color: white;
     font-weight: bold;
     font-size: 30px;
-    margin-bottom: 20px;
     border-bottom: 5px solid #ecaf0f;
     width: 280px;
-    margin: auto; }
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 10px; }
 
 .formularioReservas {
   padding: 20px 20px;
   font-weight: bold; }
+  .formularioReservas button {
+    background-color: #ecaf0f; }
 
-/*BARRA DE NAVEGACION*/
-.ancla {
-  font-size: 1.5em;
-  font-weight: bold;
-  color: white;
-  text-transform: uppercase;
-  box-shadow: 0 0 5px white;
-  border-radius: 10px;
-  margin-right: 20px; }
-  .ancla:hover {
-    color: grey; }
+/*MAPA*/
+.mapa {
+  background-color: rgba(5, 7, 12, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 30px;
+  box-shadow: 0 0 5px white; }
+  .mapa h1 {
+    color: white;
+    font-weight: bold;
+    text-shadow: none; }
+  .mapa p {
+    color: white;
+    margin-top: 50px; }
 
-.navbar-toggler {
-  background: gray;
-  color: white; }
-
-/*CONTACTO*/
+/*FORMULARIO*/
 .formulario {
   max-width: 500px;
   padding: 20px;
@@ -281,52 +282,63 @@ body {
   .formulario h2 {
     color: white;
     margin-bottom: 60px;
-    font-weight: bold; }
+    font-family: 'Special Elite', cursive; }
 
-.mapa {
-  background-color: rgba(5, 7, 12, 0.7);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding-bottom: 30px;
-  box-shadow: 0 0 5px white; }
+body {
+  font-family: sans-serif;
+  padding: 0%;
+  margin: 0%;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(5, 7, 12, 0.3), rgba(5, 7, 12, 0.3)), url(../fotos/botellas.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; }
 
-.textoUbi {
-  display: flex;
-  flex-direction: column; }
-  .textoUbi h1 {
-    color: white;
-    font-weight: bold; }
-  .textoUbi p {
-    color: white;
-    margin-top: 50px; }
+/*BARRA DE NAVEGACION*/
+.tamLogo {
+  max-width: 100%; }
 
+.ancla {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  box-shadow: 0 0 10px white;
+  border-radius: 10px;
+  margin-right: 20px; }
+  .ancla:hover {
+    color: grey; }
+
+.navbar-toggler {
+  background: gray;
+  color: white; }
+
+.barra {
+  margin-bottom: 100px; }
+
+/*FOOTER*/
 footer {
   width: 100%;
   margin-top: 200px;
   background: rgba(5, 7, 12, 0.7); }
   footer i {
     color: white; }
-
-.barra {
-  margin-bottom: 100px; }
+  footer a {
+    color: white;
+    text-decoration: none; }
 
 /*RESPONSIVE*/
 @media (max-width: 480px) {
   .tamLogo {
     height: 100px;
     width: 200px; }
-  .card {
-    width: 350px;
-    height: 250px;
-    margin: 50px 0px; }
   .mapa {
     margin-bottom: 100px; } }
 
 @media (max-width: 782px) {
   .tamLogo {
-    height: 150px;
-    width: 300px; }
+    height: 100px;
+    width: 200px; }
   .mapa {
     margin-bottom: 100px; } }
