@@ -5,7 +5,7 @@
   @import "menu";
   @import "eventos";
   @import "contacto";
-  
+
 
   body {
     font-family: sans-serif;
@@ -13,31 +13,36 @@
     margin: 0%;
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(5, 7, 12, 0.3), rgba(5, 7, 12, 0.3)), url(../fotos/botellas.jpg);
+    background-image: linear-gradient(rgba(5, 7, 12, 0.3), rgba(5, 7, 12, 0.3)), url(../fotos/fondo.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
   }
 
-/*BARRA DE NAVEGACION*/
+  /*BARRA DE NAVEGACION*/
 
-.tamLogo {
-  max-width: 100%;
-}
+  .tamLogo {
+    max-width: 100%;
+
+    &:hover {
+      transform: scale(1.1);
+      transition: 1s;
+    }
+  }
 
   .ancla {
     font-size: 1.5em;
     font-weight: bold;
     color: white;
     text-transform: uppercase;
-    box-shadow:0 0 10px white;
+    box-shadow: 0 0 10px white;
     border-radius: 10px;
     margin-right: 20px;
-    
-
 
     &:hover {
       color: grey;
+      font-size: 1.8em;
+      transition: 0.5s;
     }
   }
 
@@ -52,7 +57,6 @@
 
   /*FOOTER*/
 
-
   footer {
     width: 100%;
     margin-top: 200px;
@@ -65,30 +69,32 @@
     a {
       color: white;
       text-decoration: none;
-    }
 
+    &:hover {
+      color: grey;
+    }
   }
+}
 
   /*RESPONSIVE*/
-  
+
   @media (max-width: 480px) {
     .tamLogo {
       height: 100px;
       width: 200px;
     }
-  
+
     .mapa {
       margin-bottom: 100px;
     }
-    
   }
-  
+
   @media (max-width: 782px) {
     .tamLogo {
       height: 100px;
       width: 200px;
     }
-  
+
     .mapa {
       margin-bottom: 100px;
     }

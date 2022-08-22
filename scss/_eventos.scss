@@ -1,6 +1,6 @@
 .contenedorEventos {
   background-color: $color-primario;
-  padding: 50px 50px;
+  padding: 30px 30px;
 
 }
 
@@ -22,9 +22,9 @@
   
       .nav-tabs {
         border: 0;
-      }
   
       .navEventos {
+        font-weight: bold;
         margin: 0px 50px;
         padding: 10px 5px;
         transition: 0.3s;
@@ -34,7 +34,6 @@
         border: 0;
         border-bottom: 4px solid #ecaf0f; 
        
-  
         i {
           padding-right: 15px;
           font-size: 48px;
@@ -57,8 +56,8 @@
           box-shadow: 0 0 10px white;
         }
       }
+    }
   
-
     .tab-content {
     .tab-header {
 
@@ -70,12 +69,10 @@
                 font-weight: 30px;
                 margin: 50px 0;
         }
-
     }
+  }
 
-    }
-
-      .imgFlyer {
+    .imgFlyer {
         max-width: 100%;
         margin:auto;
       }
@@ -101,9 +98,7 @@
 
       button {
         background-color: #ecaf0f;;
-
       }
-
     }
 
 
