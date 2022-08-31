@@ -356,11 +356,15 @@ footer {
     height: 100px;
     width: 200px; }
   .mapa {
-    margin-bottom: 100px; } }
+    margin-bottom: 100px; }
+  .ancla {
+    margin-bottom: 10px; } }
 
 @media (max-width: 782px) {
   .tamLogo {
     height: 100px;
     width: 200px; }
   .mapa {
-    margin-bottom: 100px; } }
+    margin-bottom: 100px; }
+  .ancla {
+    margin-bottom: 10px; } }
